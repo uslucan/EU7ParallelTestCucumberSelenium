@@ -1,2 +1,2 @@
-file:src/test/resources/features/AccountTypes.feature:3:8
-file:src/test/resources/features/login.feature:8:13:18
+file:src/test/resources/features/AccountTypes.feature:13
+file:src/test/resources/features/login.feature:8
