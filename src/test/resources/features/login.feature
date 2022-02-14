@@ -9,7 +9,7 @@ Feature: User should be able to login
     When the user enters the driver information
     Then the user should be able to login
 
-@salesmanager @VYT-123
+@salesmanager @wip
   Scenario: Login as a salesmanager
     When the user enters the salesmanager information
     Then the user should be able to login
