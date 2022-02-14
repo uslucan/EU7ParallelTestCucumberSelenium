@@ -22,7 +22,10 @@ public class Driver {
 
     public static WebDriver get() {
         if (driver == null) {
-            String browser = ConfigurationReader.get("browser").toLowerCase();
+            //            if we pass the driver from terminal then use that one
+            //           if we do not pass the driver from terminal then use the one properties file
+            String browser = System.getProperty("browser") != null ? browser = System.getProperty("browser") : ConfigurationReader.get("browser");
+            //String browser = ConfigurationReader.get("browser").toLowerCase();
             switch (browser) {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
