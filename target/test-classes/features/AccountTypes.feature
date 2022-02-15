@@ -1,5 +1,5 @@
 Feature: Account Types
-  @wip
+  @smoke
   Scenario: Driver manager user
     Given the user logged in as "driver"
     When the user navigates to "Activities" "Calendar Events"

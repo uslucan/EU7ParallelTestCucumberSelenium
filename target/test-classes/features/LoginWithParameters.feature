@@ -12,7 +12,7 @@ Feature: Login as different users
     Then the user should be able to login
     And the title contains "Dashboard"
 
-
+@smoke
   Scenario Outline: Login as a given user --> <username>
     Given the user is on the login page
     When the user logs in using following credentials
